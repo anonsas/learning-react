@@ -1,0 +1,10 @@
+<form></form> - is traditional HTML part. Which send our collected information from our inputs, 
+which are wrapped inside the Form. And sends collected data from Browser to Server.
+
+If we don't have JavaScript in our code, then we use <form></form>.
+But when we are working with JavaScript, we absolutely, don't need <form></form>.
+
+FORM is only mechanism, without JavaScript help, to send data to the server. 
+With collecting data it has nothing todo. INPUTS are responsible for collecting data.
+
+With JavaScript, INPUTS are collecting data, and JavaScript sends that data.

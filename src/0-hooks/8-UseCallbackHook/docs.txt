@@ -1,0 +1,31 @@
+React.memo() - is a HOC, that will prevent functional component 
+from being re-rendered if its props or state didn't change.
+
+React.memo() - has nothing to do with hooks.
+React.memo(component) - and now it will re-render only if its props or state change.
+
+But this will not fully work, because on our ParentElement, when component
+re-renders and sees our function, it thinks that this functions are newly created.
+
+There are specific reasons both of these hooks are built-into React:
+  1. Referential equality.
+  2. Computationally expensive calculations.  
+
+  REFERENTIAL EQUALITY
+    true === true // true
+    false === false // true
+    1 === 1 // true
+    'a' === 'a' // true
+
+    {} === {} // false
+    [] === [] // false
+    () => {} === () => {} // false
+
+    const z = {}
+    z === z // true
+
+    // NOTE: React actually uses Object.is, but it's very similar to ===
+
+---------------------------------------------------------------
+useCallback - caches the provided function.
+useMemo - invokes the provided function, and caches the returned value.

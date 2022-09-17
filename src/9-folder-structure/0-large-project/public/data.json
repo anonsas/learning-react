@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "iPad",
+    "price": 900,
+    "category": {
+      "highLevel": "Electronics",
+      "lowLevel": "Tablet"
+    },
+    "salePrice": 500
+  },
+  {
+    "id": 2,
+    "title": "PS5",
+    "price": 600,
+    "category": {
+      "highLevel": "Electronics",
+      "lowLevel": "Console"
+    },
+    "salePrice": 400
+  },
+  {
+    "id": 3,
+    "title": "XBOX",
+    "price": 300,
+    "category": {
+      "highLevel": "Electronics",
+      "lowLevel": "Console"
+    },
+    "salePrice": 100
+  }
+]
